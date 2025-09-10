@@ -1,0 +1,82 @@
+@import "./variables.css";
+@import "./defaults.css";
+@import "./utility_classes.css";
+
+.about button {
+    background-color: var(--primary-text-dark);
+    color: var(--background-color-dark);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+img {
+    border-radius: 50%;
+    width: 13rem;
+    height: 13rem;
+    object-fit: cover;
+    margin-right: 2rem;
+}
+
+.section-quote h1 {
+    color: var(--secondary-text-dark);
+    text-align: left;
+}
+
+.section-quote small {
+    display: block;
+    text-align: left;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer {
+    border-top: 1px solid var(--border-dividers-dark);
+}
+
+footer small {
+    margin-top: 1.25rem;
+    display: block;
+    text-align: center;
+}
+
+
+.scroll-show {
+    animation: showElement both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50vh;
+}
+
+
+@keyframes showElement {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    section:nth-child(1) div {
+        flex-direction: column;
+    }
+
+    .about div {
+        align-items: center;
+    }
+
+    .about div img {
+        margin-bottom: 4rem;
+    }
+
+
+}

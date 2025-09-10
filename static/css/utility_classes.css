@@ -1,0 +1,19 @@
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.color-prime {
+    color: var(--primary-text-dark);
+}
+
+.color-second {
+    color: var(--secondary-text-dark);
+}
+
+.border-left {
+    border-left: 1px solid var(--border-dividers-dark);
+}

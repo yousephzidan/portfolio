@@ -1,0 +1,129 @@
+/* FONTS */
+@font-face {
+    font-family: "Iskry";
+    src: url("../fonts/Iskry-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Aeonik";
+    src: url("../fonts/Aeonik-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* REMOVING ALL BUILT IN DEFAULTS */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+body {
+    font-size: var(--step-0);
+    line-height: 1.6;
+    font-family: "Aeonik";
+    color: var(--secondary-text-dark);
+    padding: 3rem 1rem;
+    min-height: 100dvh;
+    background-color: var(--background-color-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary-text-dark);
+    font-family: "Iskry";
+}
+
+h1 {
+    font-size: var(--step-3);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: var(--step-2);
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: var(--step-1);
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+p {
+    display: block;
+
+    unicode-bidi: isolate;
+}
+
+p:not(:last-child) {
+    margin-bottom: 1.25rem;
+}
+
+small {
+    font-size: var(--step--1);
+    margin-bottom: 0.5rem;
+}
+
+.container {
+    max-width: 42rem;
+    margin: 0 auto;
+
+}
+
+
+.info {
+    padding-left: 1.25rem;
+    margin-bottom: 3rem;
+
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+footer {
+    display: block;
+}
