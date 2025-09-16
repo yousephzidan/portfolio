@@ -45,6 +45,19 @@ footer small {
     text-align: center;
 }
 
+.tech .info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+
+.tech .info p {
+    background-color: #1a1a1a;
+    margin: 0;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    text-decoration: none;
+}
 
 .scroll-show {
     animation: showElement both;
@@ -76,6 +89,10 @@ footer small {
 
     .about div img {
         margin-bottom: 4rem;
+    }
+
+    .tech .info {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 
